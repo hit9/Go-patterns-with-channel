@@ -1,3 +1,7 @@
+/*
+ * 一个select的使用例子
+ */
+
 package main
 
 import (

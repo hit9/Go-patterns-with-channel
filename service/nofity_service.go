@@ -1,3 +1,8 @@
+/*
+ * goroutine的应用场景之一: 挂为一个独立的服务。
+ * 该例为单独开一个查询消息通知的服务
+ */
+
 package main
 
 import "fmt"

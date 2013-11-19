@@ -44,12 +44,10 @@ func main() {
     const max = 100 // 找出100以内的所有素数
     nums := xrange() // 初始化一个整数生成器
     number := <-nums  // 从生成器中抓一个整数(2), 作为初始化整数
-    out := make(chan int) // 输出队列临时变量
 
     for number <= max { // number作为筛子，当筛子超过max的时候结束筛选
-        fmt.Println(number) // 打印素数
-        out = filter(nums, number) //筛掉number的倍数
-        number = <- nums  // 继续取下一个作为筛子
-        nums = out // 更新输入信道为筛选后的
+        fmt.Println(number) // 打印素数, 筛子即一个素数
+        nums = filter(nums, number) //筛掉number的倍数
+        number = <- nums  // 更新筛子
     }
 }

@@ -1,3 +1,7 @@
+/*
+ * 一个对select监听信道作超时处理的例子
+ */
+
 package main
 
 import (

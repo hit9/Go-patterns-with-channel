@@ -1,3 +1,7 @@
+/*
+ * 一个使用信道生成自增整数的生成器的例子
+ */
+
 package main
 
 import "fmt"

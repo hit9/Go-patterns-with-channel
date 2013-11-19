@@ -1,3 +1,6 @@
+/*
+ * 一个select监听信道数据流动并对退出信号作处理的例子
+ */
 package main
 
 import (
